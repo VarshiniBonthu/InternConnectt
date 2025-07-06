@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    android:radius="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Internship Title -->
+        <TextView
+            android:id="@+id/internshipTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Internship Title"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#000000" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/internshipDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Internship description here"
+            android:layout_marginTop="6dp"
+            android:textSize="14sp"
+            android:textColor="#555555" />
+
+        <!-- Deadline -->
+        <TextView
+            android:id="@+id/textDeadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deadline: 20 July 2025"
+            android:textSize="14sp"
+            android:layout_marginTop="6dp"
+            android:textColor="#000000" />
+
+        <!-- Branch -->
+        <TextView
+            android:id="@+id/textBranch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Branch: CSE"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"
+            android:textColor="#000000" />
+
+        <!-- React message -->
+        <TextView
+            android:id="@+id/textReactMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="React with thumbs up if you applied"
+            android:textSize="13sp"
+            android:layout_marginTop="6dp"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <!-- Action Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/buttonApply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apply"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/purple_500"
+                android:textColor="@android:color/white"
+                android:paddingHorizontal="16dp" />
+
+            <ImageButton
+                android:id="@+id/thumbsUpButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/baseline_thumb_up_alt_24"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Thumbs Up"
+                android:layout_marginStart="12dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
